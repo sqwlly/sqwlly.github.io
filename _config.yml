@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Sqwlly's Blogs 
+title: Sqwlly's Blog 
 subtitle: Still a long way off.
-description: A salted fish's Blogs
+description: A salted fish's Blog
 keywords:
 author: Sqwlly
 language: zh-Hans
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://sqwlly.cn
+url: https://sqwlly.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -56,6 +56,9 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+    数论: MathTheory
+    图论: GraphTheory
+    牛客: Nowcoder
 tag_map:
 
 # Date / Time format
@@ -81,3 +84,11 @@ deploy:
   type: git
   repo: https://github.com/sqwlly/sqwlly.github.io.git
   branch: master
+
+#mathJX
+math:
+  engine: 'mathjax' # or 'katex'
+  mathjax:
+    # src: custom_mathjax_source
+    config:
+      # MathJax config

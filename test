@@ -1,0 +1,13 @@
+$$  a^b \equiv
+\begin{cases}
+a^{b \%\varphi(p)},  & \text{gcd(a,p)$\:$=$\:$1}\\\\  
+a^b, & \text{gcd(a,p)$\:$$\not=$$\:$1,$\: b\:$< $\varphi$(p)}\\\\
+a^{b \%\varphi(p)+\varphi(p)},&\text{gcd(a,p)$\:$$\not=$$\:$1,$\: b\:$$\geq$ $\varphi$(p)}\end{cases}
+\pmod p$$  
+
+$  a^b \equiv 
+\begin{cases}
+a^{b \%\varphi(p)},  & \text{gcd(a,p)$\:$=$\:$1} \\
+a^b, & \text{gcd(a,p)$\:$$\not=$$\:$1,$\: b\:$< $\varphi$(p)}\\
+a^{b \%\varphi(p)+\varphi(p)},&\text{gcd(a,p)$\:$$\not=$$\:$1,$\: b\:$$\geq$ $\varphi$(p)}\end{cases}
+$$\:\:\:\:\:\:\:\:$$(mod $ $ p)$
