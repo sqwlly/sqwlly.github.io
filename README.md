@@ -1,2 +1,2 @@
-# sqwlly.github.io
-A blog belong with me.
+# 个人博客
+正在逐步完善功能与美化ing...
