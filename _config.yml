@@ -59,7 +59,11 @@ category_map:
     数论: MathTheory
     图论: GraphTheory
     牛客: Nowcoder
+    杂集: Myself
 tag_map:
+    数论: MathTheory
+    图论: GraphTheory
+    牛客: Nowcoder
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
