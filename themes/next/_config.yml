@@ -149,7 +149,8 @@ social_icons:
   #Icon Mappings
   GitHub: github
   Twitter: twitter
-  E-Mail: e-mail
+  E-Mail: envelope
+  csdn: crosshairs
 
 # Blog rolls
 links_icon: link
