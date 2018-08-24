@@ -5,14 +5,12 @@ tags: 杂集
 categories: 杂集
 top: true
 ---
-
-# 拥有自己的个人博客
-
+<blockquote class="blockquote-center">
 经过蒻一天多的努力，新的属于蒻自己的博客，终于完成~\\(≧▽≦)/~啦啦啦
-
-  
+</blockquote>
+{% note default %}   
 以后可能都要在这里写题解和博客啦，开森森～
   
 后续功能与美化会有时间继续折腾hahaha
   
-大家多多关注，(*^__^*) 嘻嘻……
+大家多多关注，(*^__^*) 嘻嘻……{% endnote %} 

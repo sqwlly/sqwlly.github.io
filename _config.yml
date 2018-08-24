@@ -60,10 +60,14 @@ category_map:
     图论: GraphTheory
     牛客: Nowcoder
     杂集: Myself
+    位运算卷积: Fwt
+    欧拉定理: eluer
 tag_map:
     数论: MathTheory
     图论: GraphTheory
     牛客: Nowcoder
+    位运算卷积: Fwt
+    欧拉定理: eluer
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
