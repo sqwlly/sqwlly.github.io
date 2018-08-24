@@ -1,7 +1,6 @@
 ---
 title: 新的个人博客开张啦～
 date: 2018-08-23 14:33:33
-comments: false
 tags: 杂集
 categories: 杂集
 top: true

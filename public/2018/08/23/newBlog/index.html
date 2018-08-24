@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
 <meta property="og:description" content="拥有自己的个人博客经过蒻一天多的努力，新的属于蒻自己的博客，终于完成~\(≧▽≦)/~啦啦啦 以后可能都要在这里写题解和博客啦，开森森～ 后续功能与美化会有时间继续折腾hahaha 大家多多关注，(^__^) 嘻嘻……">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-23T13:48:13.211Z">
+<meta property="og:updated_time" content="2018-08-24T01:51:55.378Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新的个人博客开张啦～">
 <meta name="twitter:description" content="拥有自己的个人博客经过蒻一天多的努力，新的属于蒻自己的博客，终于完成~\(≧▽≦)/~啦啦啦 以后可能都要在这里写题解和博客啦，开森森～ 后续功能与美化会有时间继续折腾hahaha 大家多多关注，(^__^) 嘻嘻……">
@@ -347,6 +347,18 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/23/newBlog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/23/newBlog/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
 
           
           
@@ -482,12 +494,13 @@
 
 
           
-    <div class="comments" id="comments">
+
+  
+        <div id="gitment-container"></div>
+      
     </div>
 
   
-
-
 
         </div>
         
@@ -547,10 +560,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -558,10 +571,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -818,30 +831,45 @@
 
 
 
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: '新的个人博客开张啦～', 
+            owner: 'sqwlly',
+            repo: 'sqwlly.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '935e975fa893d930720aa59c5586e0c3dc21f603',
+            
+                client_id: '99cea973f8d94465d735'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: true,
-        appId: 'jEVjDq2FjOGFwG4sCcyO9QdP-gzGzoHsz',
-        appKey: 'u7Qkv1m4LfEbicHA85dcgpET',
-        placeholder: 'ヾﾉ≧∀≦)o大爷来玩嘛～',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+
 
 
 

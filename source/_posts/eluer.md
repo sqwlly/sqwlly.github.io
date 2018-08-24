@@ -2,7 +2,6 @@
 title: 关于欧拉定理的一些知识
 date: 2018-08-23 09:29:47
 tags: [数论,欧拉定理,欧拉降幂]
-comments: false
 categories: 数论
 ---
 
