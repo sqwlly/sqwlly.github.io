@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>http://sqwlly.cn/2018/08/24/nowcoderTrain9-A/</loc>
+    <lastmod>2018-08-25T01:24:59.829Z</lastmod>
+    <data>
+        <display>
+        <title>牛客多校第九场A(fwt-异或卷积)</title>
+        <pubTime>2018-08-24T15:46:37.000Z</pubTime>
+        
+        <tag>牛客</tag>
+         
+        <tag>fwt</tag>
+         
+        <tag>acm</tag>
+         
+         
+           
+             
+              <breadCrumb title="数论" url="http://sqwlly.cn/categories/MathTheory/"/>
+          
+             
+              <breadCrumb title="位运算卷积" url="http://sqwlly.cn/categories/MathTheory/Fwt/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqwlly.cn/2018/08/23/eluer/</loc>
     <lastmod>2018-08-24T16:16:22.243Z</lastmod>
     <data>
@@ -24,33 +51,6 @@
           
              
               <breadCrumb title="欧拉定理" url="http://sqwlly.cn/categories/MathTheory/eluer/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqwlly.cn/2018/08/24/nowcoderTrain9-A/</loc>
-    <lastmod>2018-08-24T16:12:17.816Z</lastmod>
-    <data>
-        <display>
-        <title>牛客多校第九场A(fwt-异或卷积)</title>
-        <pubTime>2018-08-24T15:46:37.000Z</pubTime>
-        
-        <tag>牛客</tag>
-         
-        <tag>fwt</tag>
-         
-        <tag>acm</tag>
-         
-         
-           
-             
-              <breadCrumb title="数论" url="http://sqwlly.cn/categories/MathTheory/"/>
-          
-             
-              <breadCrumb title="位运算卷积" url="http://sqwlly.cn/categories/MathTheory/Fwt/"/>
           
         </display>
     </data>

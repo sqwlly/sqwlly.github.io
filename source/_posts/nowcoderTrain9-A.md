@@ -1,6 +1,6 @@
 ---
 title: 牛客多校第九场A(fwt-异或卷积)
-comments: false
+comments: true
 date: 2018-08-24 23:46:37
 tags: [牛客,fwt,acm]
 categories: [数论,位运算卷积]
