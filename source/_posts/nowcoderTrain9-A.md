@@ -13,7 +13,7 @@ Given n and a[i], where n is a power of 2, let's consider an n x n matrix A.
 The index of A[i][j] and a[i] are numbered from 0.
 The element A[i][j] satisfies A[i][j] = a[i xor j],
 https://en.wikipedia.org/wiki/Bitwise_operation#XOR
-
+<!-- more -->
 Let p = 1000000007.
 Consider the equation 
 A x = b (mod p)
@@ -28,7 +28,6 @@ A[3][0]*x[0] + A[3][1]*x[1] + A[3][2]*x[2] + A[3][3]*x[3] = b[3] (mod p)
 and the matrix A can be decided by the array a.
 
 It is guaranteed that there is a unique solution x for these equations. {% endnote %}
-<!-- more -->
 # Input
 {% note default %} 
 The first line contains an integer, which is n.
