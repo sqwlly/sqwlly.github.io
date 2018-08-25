@@ -62,12 +62,14 @@ category_map:
     杂集: Myself
     位运算卷积: Fwt
     欧拉定理: eluer
+    树状数组: bitTree
 tag_map:
     数论: MathTheory
     图论: GraphTheory
     牛客: Nowcoder
     位运算卷积: Fwt
     欧拉定理: eluer
+    树状数组: bitTree
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="树状数组,离散化," />
 
 
 
@@ -96,17 +96,18 @@
 
 
 
-<meta name="description" content="A salted fish&apos;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://sqwlly.cn/categories/index.html">
+<meta name="description" content="巨大的传送门问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
+<meta name="keywords" content="树状数组,离散化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CCPC网络预选赛1010(hdu)">
+<meta property="og:url" content="http://sqwlly.cn/2018/08/25/hdu-ccpc-net2018/index.html">
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
-<meta property="og:description" content="A salted fish&apos;s Blog">
+<meta property="og:description" content="巨大的传送门问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-24T01:55:12.064Z">
+<meta property="og:updated_time" content="2018-08-25T15:50:27.809Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="A salted fish&apos;s Blog">
+<meta name="twitter:title" content="CCPC网络预选赛1010(hdu)">
+<meta name="twitter:description" content="巨大的传送门问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
 
 
 
@@ -136,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://sqwlly.cn/categories/"/>
+  <link rel="canonical" href="http://sqwlly.cn/2018/08/25/hdu-ccpc-net2018/"/>
 
 
 
 
 
-  <title>分类 | Sqwlly's Blog</title>
+  <title>CCPC网络预选赛1010(hdu) | Sqwlly's Blog</title>
   
 
 
@@ -277,40 +278,223 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/08/25/hdu-ccpc-net2018/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sqwlly">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/sqwlly.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sqwlly's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 5 个分类
+          <h1 class="post-title" itemprop="name headline">CCPC网络预选赛1010(hdu)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+		    
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-25T23:21:29+08:00">
+                2018-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/bitTree/" itemprop="url" rel="index">
+                    <span itemprop="name">树状数组</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/25/hdu-ccpc-net2018/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/25/hdu-ccpc-net2018/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/25/hdu-ccpc-net2018/" class="leancloud_visitors" data-flag-title="CCPC网络预选赛1010(hdu)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  565
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
             </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MathTheory/">数论</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/MathTheory/Fwt/">位运算卷积</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MathTheory/eluer/">欧拉定理</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Myself/">杂集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/bitTree/">树状数组</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="巨大的传送门"><a href="#巨大的传送门" class="headerlink" title="巨大的传送门"></a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=6447" target="_blank" rel="noopener">巨大的传送门</a></h1><h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。<br><a id="more"></a><br>首先我们想到的就是$dp$，但是因为区间太大了，所以需要离散化一下，然后发现一般dp的复杂度是$n^2$的，肯定是要超时的，所以我们可以利用树状数组或者线段树去维护区间最大值，这样我们就可以$\Theta(nlog_n)$的复杂度求解了。</p>
+<p>大致就是先按$x$排序，然后因为我们要用树状数组去维护这个区间最大值，所以考虑到$x$相同的时候，我们要尽量取$y$大的，所以排序的第二$key$就按照$y$从大到小排序。然后排完序就给$y$去离散化一下，根据离散化好的序列去$dp$。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> lowbit(x) ((x)&amp;(-(x)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a, b) (((a)&gt;(b))?(a):(b))</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e5</span> + <span class="number">10</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> x, y, w;</span><br><span class="line">&#125; a[N];</span><br><span class="line"><span class="keyword">int</span> bit[N], shit[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">const</span> node &amp;a, <span class="keyword">const</span> node &amp;b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (a.x == b.x)</span><br><span class="line">        <span class="keyword">return</span> a.y &gt; b.y;</span><br><span class="line">    <span class="keyword">return</span> a.x &lt; b.x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = x; i &lt; N; i += lowbit(i))</span><br><span class="line">        bit[i] = max(v, bit[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> d)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = d; i; i -= lowbit(i))</span><br><span class="line">        ans = max(ans, bit[i]);</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T, n, x, y, w;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">        <span class="built_in">memset</span>(bit, <span class="number">0</span>, <span class="keyword">sizeof</span> bit);</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; id;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;x, &amp;y, &amp;w);</span><br><span class="line">            a[i].x = x, a[i].y = y, a[i].w = w;</span><br><span class="line">            id.push_back(y);</span><br><span class="line">        &#125;</span><br><span class="line">        sort(id.begin(), id.end());</span><br><span class="line">        id.erase(unique(id.begin(), id.end()), id.end());</span><br><span class="line">        sort(a, a + n, cmp);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">            shit[i] = lower_bound(id.begin(), id.end(), a[i].y) - id.begin() + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> love = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="comment">//dp[i] = max&#123;dp[0, i - 1]&#125;+a[i].w;</span></span><br><span class="line">            <span class="keyword">int</span> fuck = query(shit[i] - <span class="number">1</span>) + a[i].w;</span><br><span class="line">            update(shit[i], fuck);</span><br><span class="line">            love = max(love, fuck);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, love);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/bitTree/" rel="tag"><i class="fa fa-tag"></i> 树状数组</a>
+          
+            <a href="/tags/离散化/" rel="tag"><i class="fa fa-tag"></i> 离散化</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/24/nowcoderTrain9-A/" rel="next" title="牛客多校第九场A(fwt-异或卷积)">
+                <i class="fa fa-chevron-left"></i> 牛客多校第九场A(fwt-异或卷积)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -319,8 +503,11 @@
 
 
           
-    <div class="comments" id="comments">
-    </div>
+
+  
+        <div id="gitment-container"></div>
+      
+
 
   
 
@@ -343,8 +530,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -436,6 +632,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#巨大的传送门"><span class="nav-number">1.</span> <span class="nav-text">巨大的传送门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">2.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -658,6 +870,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: 'CCPC网络预选赛1010(hdu)', 
+            owner: 'sqwlly',
+            repo: 'sqwlly.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '935e975fa893d930720aa59c5586e0c3dc21f603',
+            
+                client_id: '99cea973f8d94465d735'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
