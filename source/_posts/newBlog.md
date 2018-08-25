@@ -8,8 +8,8 @@ top: true
 <blockquote class="blockquote-center">
 经过蒻一天多的努力，新的属于蒻自己的博客，终于完成~\\(≧▽≦)/~啦啦啦
 </blockquote>
-{% note default %}   
-以后可能都要在这里写题解和博客啦，开森森～
+<!-- more -->
+{% note default %}以后可能都要在这里写题解和博客啦，开森森～
   
 后续功能与美化会有时间继续折腾hahaha
   

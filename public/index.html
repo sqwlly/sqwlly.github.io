@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -113,9 +113,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -160,7 +160,7 @@
     
   
 
-  <div class="container sidebar-position-right 
+  <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -243,6 +243,16 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-board">
+          <a href="/board/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -418,12 +428,7 @@
 
       
         
-          
-          经过蒻一天多的努力，新的属于蒻自己的博客，终于完成~\(≧▽≦)/~啦啦啦以后可能都要在这里写题解和博客啦，开森森～
-后续功能与美化会有时间继续折腾hahaha
-大家多多关注，(^__^) 嘻嘻…… 
-
-          
+          <p><blockquote class="blockquote-center"><br>经过蒻一天多的努力，新的属于蒻自己的博客，终于完成~\(≧▽≦)/~啦啦啦<br></blockquote><br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/08/23/newBlog/#more" rel="contents">
@@ -623,9 +628,11 @@
 
       
         
-          
-          题目描述Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.Given n and a[i], w
-          ...
+          <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><div class="note default"><p>Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.<br>Given n and a[i], where n is a power of 2, let’s consider an n x n matrix A.</p>
+<p>The index of A[i][j] and a[i] are numbered from 0.<br>The element A[i][j] satisfies A[i][j] = a[i xor j],<br><a href="https://en.wikipedia.org/wiki/Bitwise_operation#XOR" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Bitwise_operation#XOR</a></p>
+<p>Let p = 1000000007.<br>Consider the equation<br>A x = b (mod p)<br>where A is an n x n matrix, and x and b are both n x 1 row vector.</p>
+<p>Given n, a[i], b[i], you need to solve the x.<br>For example, when n = 4, the equations look like<br>A[0][0]<em>x[0] + A[0][1]</em>x[1] + A[0][2]<em>x[2] + A[0][3]</em>x[3] = b[0] (mod p)<br>A[1][0]<em>x[0] + A[1][1]</em>x[1] + A[1][2]<em>x[2] + A[1][3]</em>x[3] = b[1] (mod p)<br>A[2][0]<em>x[0] + A[2][1]</em>x[1] + A[2][2]<em>x[2] + A[2][3]</em>x[3] = b[2] (mod p)<br>A[3][0]<em>x[0] + A[3][1]</em>x[1] + A[3][2]<em>x[2] + A[3][3]</em>x[3] = b[3] (mod p)<br>and the matrix A can be decided by the array a.</p>
+<p>It is guaranteed that there is a unique solution x for these equations. </p></div>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/08/24/nowcoderTrain9-A/#more" rel="contents">
@@ -825,10 +832,8 @@
 
       
         
-          
-          欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$
-对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6
-          ...
+          <h1 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a><a href="https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/891345?fr=aladdin" target="_blank" rel="noopener">欧拉定理</a></h1><p>$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$</p>
+<p>对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。<br>比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/08/23/eluer/#more" rel="contents">
@@ -1160,6 +1165,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
 
   
@@ -1333,6 +1345,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   

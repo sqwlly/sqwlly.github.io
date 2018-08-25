@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$ 对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。 扩展欧拉定理(降幂公式)$$  a^b \equiv\begin{cases}a^{b \%\varphi(p)">
+<meta name="description" content="欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$ 对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。">
 <meta name="keywords" content="数论,欧拉定理,欧拉降幂">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于欧拉定理的一些知识">
 <meta property="og:url" content="http://sqwlly.cn/2018/08/23/eluer/index.html">
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
-<meta property="og:description" content="欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$ 对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。 扩展欧拉定理(降幂公式)$$  a^b \equiv\begin{cases}a^{b \%\varphi(p)">
+<meta property="og:description" content="欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$ 对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-24T16:16:22.243Z">
+<meta property="og:updated_time" content="2018-08-25T02:52:11.354Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于欧拉定理的一些知识">
-<meta name="twitter:description" content="欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$ 对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。 扩展欧拉定理(降幂公式)$$  a^b \equiv\begin{cases}a^{b \%\varphi(p)">
+<meta name="twitter:description" content="欧拉定理$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$ 对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。">
 
 
 
@@ -115,9 +115,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -162,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,6 +244,16 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-board">
+          <a href="/board/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -434,7 +444,7 @@
 
       
         <h1 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a><a href="https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86/891345?fr=aladdin" target="_blank" rel="noopener">欧拉定理</a></h1><p>$$a^{\varphi(n)}\equiv 1(mod\:n),\:gcd(a,n)=1$$</p>
-<p>对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。<br>比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。</p>
+<p>对于正整数$n$，代表小于等于$n$的与$n$互质的数的个数，记作$\varphi(n)$。<br>比如$\varphi(6)=2$，因为与$6$互质并且小于等于$6$的正整数有$1,5$。<br><a id="more"></a></p>
 <h1 id="扩展欧拉定理-降幂公式"><a href="#扩展欧拉定理-降幂公式" class="headerlink" title="扩展欧拉定理(降幂公式)"></a>扩展欧拉定理(降幂公式)</h1><p>$$  a^b \equiv<br>\begin{cases}<br>a^{b \%\varphi(p)},  &amp; \text{gcd(a,p)$\:$=$\:$1}\\<br>a^b, &amp; \text{gcd(a,p)$\:$$\not=$$\:$1,$\: b\:$&lt; $\varphi$(p)}\\<br>a^{b \%\varphi(p)+\varphi(p)},&amp;\text{gcd(a,p)$\:$$\not=$$\:$1,$\: b\:$$\geq$ $\varphi$(p)}\end{cases}<br>\pmod p$$  </p>
 <p>除此之外呢，欧拉定理有以下几个性质，<br>$1.\:$如果$n$为某一素数$p$，则有$\varphi(p)=p-1$。因为$p$为素数，因子只有$1$和$p$，而$p$和$p$不互质，所以$ \varphi(p)=p-1$。</p>
 <p>实际上呢，欧拉定理是费马小定理的一种推广，我们利用性质$1$就可以很容易证明。<br>费马小定理：$a^{p-1}\equiv 1(mod\:p),gcd(a,p)=1$。因为$p$为质数，所以有$\varphi(p)=p-1$，代入欧拉定理即可。<br>推论：$a^p\equiv a(mod\:p)$，如果$a$能被$p$整除。</p>
@@ -822,6 +832,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -1023,6 +1040,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   

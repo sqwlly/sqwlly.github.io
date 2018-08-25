@@ -5,7 +5,7 @@ date: 2018-08-24 23:46:37
 tags: [牛客,fwt,acm]
 categories: [数论,位运算卷积]
 ---
-## 题目描述
+# 题目描述
 {% note default %}
 Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.
 Given n and a[i], where n is a power of 2, let's consider an n x n matrix A.
@@ -28,7 +28,8 @@ A[3][0]*x[0] + A[3][1]*x[1] + A[3][2]*x[2] + A[3][3]*x[3] = b[3] (mod p)
 and the matrix A can be decided by the array a.
 
 It is guaranteed that there is a unique solution x for these equations. {% endnote %}
-## Input
+<!-- more -->
+# Input
 {% note default %} 
 The first line contains an integer, which is n.
 The second line contains n integers, which are the array a.
@@ -39,13 +40,13 @@ p = 1000000007
 0 <= a[i] < p
 0 <= b[i] < p
 {% endnote %} 
-## Output
+# Output
 {% note default %}
 The output should contains n lines.
 The i-th(index from 0) line should contain x[i].
 x[i] is an integer, and should satisfy 0 <= x[i] < p.
 {% endnote %} 
-## 问题分析
+# 问题分析
 {% note default %}
 首先，我们通过观察题目得到$$A\times x = b \pmod p$$
 将矩阵$A$展开
@@ -63,7 +64,7 @@ $$ \left[
 
 那么我们就可以做一次$fwt(a)$，做一次$fwt(b)$，然后$x[i] = \frac{b[i]}{a[i]}$，再做一次逆$fwt(x)$就好了啊。
 {% endnote %} 
-## 代码
+# 代码
 ```c++
 #include <cstdio>
 typedef long long LL;
