@@ -4,6 +4,35 @@
 
     
   <url>
+    <loc>http://sqwlly.cn/2018/08/26/2018ccpc-hdu6348/</loc>
+    <lastmod>2018-08-26T12:17:23.257Z</lastmod>
+    <data>
+        <display>
+        <title>2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列</title>
+        <pubTime>2018-08-26T11:25:03.000Z</pubTime>
+        
+        <tag>CCPC</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>贪心</tag>
+         
+        <tag>优先队列</tag>
+         
+         
+           
+             
+              <breadCrumb title="贪心" url="http://sqwlly.cn/categories/Greedy/"/>
+          
+             
+              <breadCrumb title="HDU" url="http://sqwlly.cn/categories/HDU/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqwlly.cn/2018/08/25/2018ccpc-hdu6447/</loc>
     <lastmod>2018-08-26T11:44:35.877Z</lastmod>
     <data>
@@ -48,35 +77,6 @@
           
              
               <breadCrumb title="费马大定理" url="http://sqwlly.cn/categories/MathTheory/%E8%B4%B9%E9%A9%AC%E5%A4%A7%E5%AE%9A%E7%90%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sqwlly.cn/2018/08/26/2018ccpc-hdu6348/</loc>
-    <lastmod>2018-08-26T11:34:26.495Z</lastmod>
-    <data>
-        <display>
-        <title>2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列</title>
-        <pubTime>2018-08-26T11:25:03.000Z</pubTime>
-        
-        <tag>CCPC</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>贪心</tag>
-         
-        <tag>优先队列</tag>
-         
-         
-           
-             
-              <breadCrumb title="贪心" url="http://sqwlly.cn/categories/Greedy/"/>
-          
-             
-              <breadCrumb title="HDU" url="http://sqwlly.cn/categories/HDU/"/>
           
         </display>
     </data>
