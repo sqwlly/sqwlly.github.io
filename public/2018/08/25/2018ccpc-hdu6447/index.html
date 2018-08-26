@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="巨大的传送门问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
+<meta name="description" content="YJJ’s Salesman问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
 <meta name="keywords" content="树状数组,离散化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CCPC网络预选赛1010(hdu)">
-<meta property="og:url" content="http://sqwlly.cn/2018/08/25/hdu-ccpc-net2018/index.html">
+<meta property="og:title" content="2018CCPC网络预选赛1010(hdu6447) dp+树状数组">
+<meta property="og:url" content="http://sqwlly.cn/2018/08/25/2018ccpc-hdu6447/index.html">
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
-<meta property="og:description" content="巨大的传送门问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
+<meta property="og:description" content="YJJ’s Salesman问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-25T15:50:27.809Z">
+<meta property="og:updated_time" content="2018-08-26T11:44:35.877Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CCPC网络预选赛1010(hdu)">
-<meta name="twitter:description" content="巨大的传送门问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
+<meta name="twitter:title" content="2018CCPC网络预选赛1010(hdu6447) dp+树状数组">
+<meta name="twitter:description" content="YJJ’s Salesman问题分析题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。">
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://sqwlly.cn/2018/08/25/hdu-ccpc-net2018/"/>
+  <link rel="canonical" href="http://sqwlly.cn/2018/08/25/2018ccpc-hdu6447/"/>
 
 
 
 
 
-  <title>CCPC网络预选赛1010(hdu) | Sqwlly's Blog</title>
+  <title>2018CCPC网络预选赛1010(hdu6447) dp+树状数组 | Sqwlly's Blog</title>
   
 
 
@@ -290,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/08/25/hdu-ccpc-net2018/">
+    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/08/25/2018ccpc-hdu6447/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sqwlly">
@@ -307,7 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CCPC网络预选赛1010(hdu)</h1>
+          <h1 class="post-title" itemprop="name headline">2018CCPC网络预选赛1010(hdu6447) dp+树状数组</h1>
         
 
         <div class="post-meta">
@@ -361,8 +361,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/25/hdu-ccpc-net2018/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/25/hdu-ccpc-net2018/" itemprop="commentsCount"></span>
+                <a href="/2018/08/25/2018ccpc-hdu6447/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/25/2018ccpc-hdu6447/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -370,7 +370,7 @@
 
           
           
-             <span id="/2018/08/25/hdu-ccpc-net2018/" class="leancloud_visitors" data-flag-title="CCPC网络预选赛1010(hdu)">
+             <span id="/2018/08/25/2018ccpc-hdu6447/" class="leancloud_visitors" data-flag-title="2018CCPC网络预选赛1010(hdu6447) dp+树状数组">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -395,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  565
+                  562
                 </span>
               
 
@@ -432,7 +432,7 @@
       
 
       
-        <h1 id="巨大的传送门"><a href="#巨大的传送门" class="headerlink" title="巨大的传送门"></a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=6447" target="_blank" rel="noopener">巨大的传送门</a></h1><h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。<br><a id="more"></a><br>首先我们想到的就是$dp$，但是因为区间太大了，所以需要离散化一下，然后发现一般dp的复杂度是$n^2$的，肯定是要超时的，所以我们可以利用树状数组或者线段树去维护区间最大值，这样我们就可以$\Theta(nlog_n)$的复杂度求解了。</p>
+        <h1 id="YJJ’s-Salesman"><a href="#YJJ’s-Salesman" class="headerlink" title="YJJ’s Salesman"></a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=6447" target="_blank" rel="noopener">YJJ’s Salesman</a></h1><h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>题意：从$(0,0)$到$(10^9,10^9)$，每次只能往$(x+1,y),(x+1,y+1),(x,y+1)$三个方向走，期间有$n$个村庄，只有当从$(x-1,y-1)$走到当前村庄才会获得$v_k$元，问最后到达目标时的可以获得的最大钱数。<br><a id="more"></a><br>首先我们想到的就是$dp$，但是因为区间太大了，所以需要离散化一下，然后发现一般dp的复杂度是$n^2$的，肯定是要超时的，所以我们可以利用树状数组或者线段树去维护区间最大值，这样我们就可以$\Theta(nlog_n)$的复杂度求解了。</p>
 <p>大致就是先按$x$排序，然后因为我们要用树状数组去维护这个区间最大值，所以考虑到$x$相同的时候，我们要尽量取$y$大的，所以排序的第二$key$就按照$y$从大到小排序。然后排完序就给$y$去离散化一下，根据离散化好的序列去$dp$。</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> lowbit(x) ((x)&amp;(-(x)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> max(a, b) (((a)&gt;(b))?(a):(b))</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e5</span> + <span class="number">10</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> x, y, w;</span><br><span class="line">&#125; a[N];</span><br><span class="line"><span class="keyword">int</span> bit[N], shit[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">const</span> node &amp;a, <span class="keyword">const</span> node &amp;b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (a.x == b.x)</span><br><span class="line">        <span class="keyword">return</span> a.y &gt; b.y;</span><br><span class="line">    <span class="keyword">return</span> a.x &lt; b.x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = x; i &lt; N; i += lowbit(i))</span><br><span class="line">        bit[i] = max(v, bit[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> d)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = d; i; i -= lowbit(i))</span><br><span class="line">        ans = max(ans, bit[i]);</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T, n, x, y, w;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">        <span class="built_in">memset</span>(bit, <span class="number">0</span>, <span class="keyword">sizeof</span> bit);</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; id;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;x, &amp;y, &amp;w);</span><br><span class="line">            a[i].x = x, a[i].y = y, a[i].w = w;</span><br><span class="line">            id.push_back(y);</span><br><span class="line">        &#125;</span><br><span class="line">        sort(id.begin(), id.end());</span><br><span class="line">        id.erase(unique(id.begin(), id.end()), id.end());</span><br><span class="line">        sort(a, a + n, cmp);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">            shit[i] = lower_bound(id.begin(), id.end(), a[i].y) - id.begin() + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> love = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="comment">//dp[i] = max&#123;dp[0, i - 1]&#125;+a[i].w;</span></span><br><span class="line">            <span class="keyword">int</span> fuck = query(shit[i] - <span class="number">1</span>) + a[i].w;</span><br><span class="line">            update(shit[i], fuck);</span><br><span class="line">            love = max(love, fuck);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, love);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -477,8 +477,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/26/2018ccpc-hdu6441/" rel="prev" title="2018ccpc网络预选赛1010(hdu6441) 费马大定理">
-                2018ccpc网络预选赛1010(hdu6441) 费马大定理 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/26/2018ccpc-hdu6441/" rel="prev" title="2018CCPC网络预选赛1004(hdu6441) 费马大定理">
+                2018CCPC网络预选赛1004(hdu6441) 费马大定理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -563,7 +563,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -574,7 +574,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -585,7 +585,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -646,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#巨大的传送门"><span class="nav-number">1.</span> <span class="nav-text">巨大的传送门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">2.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#YJJ’s-Salesman"><span class="nav-number">1.</span> <span class="nav-text">YJJ’s Salesman</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">2.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
@@ -683,7 +683,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">2.6k</span> 字
+      博客全站共： <span class="post-count">3.0k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
@@ -871,7 +871,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new Gitmint({
-            id: 'CCPC网络预选赛1010(hdu)', 
+            id: '2018CCPC网络预选赛1010(hdu6447) dp+树状数组', 
             owner: 'sqwlly',
             repo: 'sqwlly.github.io',
             

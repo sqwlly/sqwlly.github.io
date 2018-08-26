@@ -63,6 +63,7 @@ category_map:
     位运算卷积: Fwt
     欧拉定理: eluer
     树状数组: bitTree
+    贪心: Greedy
 tag_map:
     数论: MathTheory
     图论: GraphTheory
@@ -70,6 +71,7 @@ tag_map:
     位运算卷积: Fwt
     欧拉定理: eluer
     树状数组: bitTree
+    贪心: Greedy
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
