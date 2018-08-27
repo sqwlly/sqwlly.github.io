@@ -111,7 +111,6 @@ baidusitemap:
     path: baidusitemap.xml
 baidu_url_submit:
   count: 5 ## 提交最新的五个链接
-  host: www.hui-wang.info ## 百度站长平台中注册的域名
+  host: www.sqwlly.cn ## 百度站长平台中注册的域名
   token: your_token ## 准入秘钥
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
-

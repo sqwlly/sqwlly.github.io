@@ -1,13 +1,36 @@
-#gitment-display-button{
-    display: inline-block;
-    padding: 0 15px;
-    color: #0a9caf;
-    cursor: pointer;
-    font-size: 14px;
-    border: 1px solid #0a9caf;
-    border-radius: 4px;
+// 这是 gitment 整体边框的效果
+.gitment-render {
+  background: #fff;
+  margin: auto;
+
+  box-shadow: 1px 2px 3px #ddd;
+  border: 1px solid color-border;
+  border-radius: 5px;
 }
-#gitment-display-button:hover{
-    color: #fff;
-    background: #0a9caf;
+
+// 这是 gitment 内的默认字体
+.gitment-container {
+  font-family: font-sans;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: color-white;
+  word-wrap: break-word;
+}
+
+// 引用块的颜色
+.gitment-markdown blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #ffe4e1;
+}
+
+// 其中 background-color 定义了 highlight 背景色
+.gitment-markdown code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 95%;
+  background-color: #ffe4e1;
+  border-radius: 0;
 }
