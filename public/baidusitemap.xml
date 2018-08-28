@@ -4,6 +4,58 @@
 
     
   <url>
+    <loc>http://sqwlly.cn/2018/08/28/bzoj2257/</loc>
+    <lastmod>2018-08-28T07:06:37.616Z</lastmod>
+    <data>
+        <display>
+        <title>bzoj 2257 瓶子和燃料(裴蜀定理)</title>
+        <pubTime>2018-08-28T07:05:10.000Z</pubTime>
+        
+        <tag>数论</tag>
+         
+        <tag>裴蜀定理</tag>
+         
+        <tag>bzoj</tag>
+         
+         
+           
+             
+              <breadCrumb title="数论" url="http://sqwlly.cn/categories/MathTheory/"/>
+          
+             
+              <breadCrumb title="裴蜀定理" url="http://sqwlly.cn/categories/MathTheory/%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sqwlly.cn/2018/08/28/bzoj2299/</loc>
+    <lastmod>2018-08-28T06:34:44.140Z</lastmod>
+    <data>
+        <display>
+        <title>bzoj2299 向量(裴蜀定理)</title>
+        <pubTime>2018-08-28T05:54:24.000Z</pubTime>
+        
+        <tag>数论</tag>
+         
+        <tag>裴蜀定理</tag>
+         
+         
+           
+             
+              <breadCrumb title="数论" url="http://sqwlly.cn/categories/MathTheory/"/>
+          
+             
+              <breadCrumb title="裴蜀定理" url="http://sqwlly.cn/categories/MathTheory/%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqwlly.cn/2018/08/26/2018ccpc-hdu6348/</loc>
     <lastmod>2018-08-26T12:17:23.257Z</lastmod>
     <data>
@@ -11,13 +63,13 @@
         <title>2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列</title>
         <pubTime>2018-08-26T11:25:03.000Z</pubTime>
         
-        <tag>CCPC</tag>
-         
-        <tag>HDU</tag>
-         
         <tag>贪心</tag>
          
         <tag>优先队列</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>CCPC</tag>
          
          
            
@@ -64,11 +116,11 @@
         
         <tag>数论</tag>
          
-        <tag>费马大定理</tag>
+        <tag>HDU</tag>
          
         <tag>CCPC</tag>
          
-        <tag>HDU</tag>
+        <tag>费马大定理</tag>
          
          
            

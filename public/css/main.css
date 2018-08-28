@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #81fe73;
+  background: #9a30b4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2219,18 +2219,33 @@ pre .javascript .function {
   background-color: #78ace9 !important;
   border-color: #4cae4c !important;
 }
-#gitment-display-button {
-  display: inline-block;
-  padding: 0 15px;
-  color: #0a9caf;
-  cursor: pointer;
-  font-size: 14px;
-  border: 1px solid #0a9caf;
-  border-radius: 4px;
+.gitment-render {
+  background: #fff;
+  margin: auto;
+  box-shadow: 1px 2px 3px #ddd;
+  border: 1px solid color-border;
+  border-radius: 5px;
 }
-#gitment-display-button:hover {
-  color: #fff;
-  background: #0a9caf;
+.gitment-container {
+  font-family: font-sans;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: color-white;
+  word-wrap: break-word;
+}
+.gitment-markdown blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #ffe4e1;
+}
+.gitment-markdown code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 95%;
+  background-color: #ffe4e1;
+  border-radius: 0;
 }
 .post-spread {
   margin-top: 20px;
@@ -2609,55 +2624,33 @@ pre .javascript .function {
 .page-post-detail .comments {
   overflow: hidden;
 }
-.gitment_title:hover {
-  color: #fff;
-  background: #0a9caf;
-  background-image: initial;
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: #0a9caf;
+.gitment-render {
+  background: #fff;
+  margin: auto;
+  box-shadow: 1px 2px 3px #ddd;
+  border: 1px solid color-border;
+  border-radius: 5px;
 }
-.gitment_title {
-  border: 1px solid #0a9caf;
-  border-top-color: #0a9caf;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-right-color: #0a9caf;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-bottom-color: #0a9caf;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: #0a9caf;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-radius: 4px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+.gitment-container {
+  font-family: font-sans;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: color-white;
+  word-wrap: break-word;
 }
-.gitment_title {
-  display: inline-block;
-  padding: 0 15px;
-  padding-top: 0px;
-  padding-right: 15px;
-  padding-bottom: 0px;
-  padding-left: 15px;
-  color: #0a9caf;
-  cursor: pointer;
-  font-size: 14px;
+.gitment-markdown blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #ffe4e1;
+}
+.gitment-markdown code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 95%;
+  background-color: #ffe4e1;
+  border-radius: 0;
 }
 h1,
 h2,
