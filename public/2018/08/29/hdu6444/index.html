@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="CCPC,HDU,贪心,优先队列," />
+  <meta name="keywords" content="CCPC,HDU,单调队列," />
 
 
 
@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Buy and Resell问题分析题意：有$n$个村庄，每经过一个村庄你有以下三个选择  买能量块 卖能量块 什么也不做求最后可以获得的最大利润，并且尽可能减少交易次数。">
-<meta name="keywords" content="CCPC,HDU,贪心,优先队列">
+<meta name="description" content="Neko’s loop问题分析题意：给一个元素个数为$n$的环，选定任意一个起点$i$后，每次可以往前跳$(i+k)\%n$，然后会相应得到$a_i$的收益，问跳$m$次后总收益可以达到$s$(可以提前停止)，在开始之前至少需要身上需要有多少收益。 显然这样选定一个起点后不断往前跳，所获得的$a_i$会形成一个环。 那么我们就可以把所有环找出来，通过枚举环的起点来找每个环可以获得的最大收益。问题就">
+<meta name="keywords" content="CCPC,HDU,单调队列">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列">
-<meta property="og:url" content="http://sqwlly.cn/2018/08/26/2018ccpc-hdu6348/index.html">
+<meta property="og:title" content="2018CCPC网络预选赛1007(hdu6444) 单调队列">
+<meta property="og:url" content="http://sqwlly.cn/2018/08/29/hdu6444/index.html">
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
-<meta property="og:description" content="Buy and Resell问题分析题意：有$n$个村庄，每经过一个村庄你有以下三个选择  买能量块 卖能量块 什么也不做求最后可以获得的最大利润，并且尽可能减少交易次数。">
+<meta property="og:description" content="Neko’s loop问题分析题意：给一个元素个数为$n$的环，选定任意一个起点$i$后，每次可以往前跳$(i+k)\%n$，然后会相应得到$a_i$的收益，问跳$m$次后总收益可以达到$s$(可以提前停止)，在开始之前至少需要身上需要有多少收益。 显然这样选定一个起点后不断往前跳，所获得的$a_i$会形成一个环。 那么我们就可以把所有环找出来，通过枚举环的起点来找每个环可以获得的最大收益。问题就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-26T12:17:23.257Z">
+<meta property="og:updated_time" content="2018-08-30T06:36:15.834Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列">
-<meta name="twitter:description" content="Buy and Resell问题分析题意：有$n$个村庄，每经过一个村庄你有以下三个选择  买能量块 卖能量块 什么也不做求最后可以获得的最大利润，并且尽可能减少交易次数。">
+<meta name="twitter:title" content="2018CCPC网络预选赛1007(hdu6444) 单调队列">
+<meta name="twitter:description" content="Neko’s loop问题分析题意：给一个元素个数为$n$的环，选定任意一个起点$i$后，每次可以往前跳$(i+k)\%n$，然后会相应得到$a_i$的收益，问跳$m$次后总收益可以达到$s$(可以提前停止)，在开始之前至少需要身上需要有多少收益。 显然这样选定一个起点后不断往前跳，所获得的$a_i$会形成一个环。 那么我们就可以把所有环找出来，通过枚举环的起点来找每个环可以获得的最大收益。问题就">
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://sqwlly.cn/2018/08/26/2018ccpc-hdu6348/"/>
+  <link rel="canonical" href="http://sqwlly.cn/2018/08/29/hdu6444/"/>
 
 
 
 
 
-  <title>2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列 | Sqwlly's Blog</title>
+  <title>2018CCPC网络预选赛1007(hdu6444) 单调队列 | Sqwlly's Blog</title>
   
 
 
@@ -290,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/08/26/2018ccpc-hdu6348/">
+    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/08/29/hdu6444/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sqwlly">
@@ -307,7 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列</h1>
+          <h1 class="post-title" itemprop="name headline">2018CCPC网络预选赛1007(hdu6444) 单调队列</h1>
         
 
         <div class="post-meta">
@@ -320,8 +320,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-26T19:25:03+08:00">
-                2018-08-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-29T21:57:03+08:00">
+                2018-08-29
               </time>
             
 
@@ -343,8 +343,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Greedy/" itemprop="url" rel="index">
-                    <span itemprop="name">贪心</span>
+                  <a href="/categories/HDU/" itemprop="url" rel="index">
+                    <span itemprop="name">HDU</span>
                   </a>
                 </span>
 
@@ -354,8 +354,19 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HDU/" itemprop="url" rel="index">
-                    <span itemprop="name">HDU</span>
+                  <a href="/categories/CCPC/" itemprop="url" rel="index">
+                    <span itemprop="name">CCPC</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/单调队列/" itemprop="url" rel="index">
+                    <span itemprop="name">单调队列</span>
                   </a>
                 </span>
 
@@ -372,8 +383,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/26/2018ccpc-hdu6348/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/26/2018ccpc-hdu6348/" itemprop="commentsCount"></span>
+                <a href="/2018/08/29/hdu6444/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/29/hdu6444/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -381,7 +392,7 @@
 
           
           
-             <span id="/2018/08/26/2018ccpc-hdu6348/" class="leancloud_visitors" data-flag-title="2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列">
+             <span id="/2018/08/29/hdu6444/" class="leancloud_visitors" data-flag-title="2018CCPC网络预选赛1007(hdu6444) 单调队列">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -406,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  433
+                  928
                 </span>
               
 
@@ -422,7 +433,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  4
                 </span>
               
             </div>
@@ -443,17 +454,11 @@
       
 
       
-        <h1 id="Buy-and-Resell"><a href="#Buy-and-Resell" class="headerlink" title="Buy and Resell"></a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=6438" target="_blank" rel="noopener">Buy and Resell</a></h1><h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>题意：有$n$个村庄，每经过一个村庄你有以下三个选择</p>
-<ol>
-<li>买能量块</li>
-<li>卖能量块</li>
-<li><p>什么也不做<br>求最后可以获得的最大利润，并且尽可能减少交易次数。</p>
-<a id="more"></a>
-<p>我们可以准着低买高卖的原则，用一个小顶堆维护我们交易过的能量块。<br>只要当前能量块$i$的价格高于我们之前买来的能量块$j$的价格，我们就可以将其卖出去，并且一定是获利的，但是这样做并不能保证利润最大，所以我们就可以$push$两次当前能量块，一次代表我们将其买入了，一次代表我们以后发现有价格更高的能量块，我们用来反悔的。</p>
-</li>
-</ol>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T, n, shit;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> love = <span class="number">0</span>, dog = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">        priority_queue&lt;pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; pq;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;shit);</span><br><span class="line">            pq.push(make_pair(-shit, <span class="number">1</span>)); <span class="comment">//买入</span></span><br><span class="line">            pq.push(make_pair(-shit, <span class="number">2</span>)); <span class="comment">//卖出</span></span><br><span class="line">            love += shit + pq.top().first;</span><br><span class="line">            <span class="keyword">if</span> (pq.top().second == <span class="number">1</span>) dog += <span class="number">2</span>; <span class="comment">//每一次买入必定会有卖出</span></span><br><span class="line">            pq.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld %lld\n"</span>, love, dog);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我想有可能有小伙伴比较疑惑为什么这样的做法是对的。因为，我们每天买入卖出，累加的是差值(当然真正的买入卖出是根据小顶堆维护的最小值)。实际上我们做的算法是，对于每一个能量块，我们去看前面村庄的能量块，什么时候买入可以获得最大利润。求每一个能量块的贡献。</p>
+        <h1 id="Neko’s-loop"><a href="#Neko’s-loop" class="headerlink" title="Neko’s loop"></a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=6444" target="_blank" rel="noopener">Neko’s loop</a></h1><h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>题意：给一个元素个数为$n$的环，选定任意一个起点$i$后，每次可以往前跳$(i+k)\%n$，然后会相应得到$a_i$的收益，问跳$m$次后总收益可以达到$s$(可以提前停止)，在开始之前至少需要身上需要有多少收益。</p>
+<p>显然这样选定一个起点后不断往前跳，所获得的$a_i$会形成一个环。</p>
+<p>那么我们就可以把所有环找出来，通过枚举环的起点来找每个环可以获得的最大收益。问题就转化成求每个环的长度为$m$的最大子段和了。<br><a id="more"></a><br>我们用$cnt = \frac{len}{m}(len表示循环节长度)$代表需要跑几次循环节，用$ret = len \% m$代表剩余步数。<br>但是我们要注意两点。<br>首先，如果循环节的总收益为负，那么我们直接求一个不超过$m$的最大子段和就可以了。因为跑再更多次只会收益变得更小。<br>其次，如果$len&gt;m$，我想很多人可能就会直接$cnt * 循环节总收益 +剩余(len\% m)所能获得最大总收益$，这就是本题的坑点了。因为题目告诉了我们可以提前停止，如果最后一圈有负数，我们可以跑完正数的那一部分，剩下的负数不跑了。<br>就比如序列为$-2,-5,-7,20$，那么我们可以跑完$cnt-1$圈，再跑个$20$就够了。所以我们真正能确定的是前$cnt-1$前所能获得的最大收益，剩下的我们拿出来单独跑。</p>
+<p>但是呢，还是要注意，我们跑剩余的时候，长度为$len+(len\%m)$，然后最后一步能跑到的范围为$(len-1,3*len)$，因此我们需要开三倍的数组。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> LL inf = <span class="number">1e18</span>;</span><br><span class="line">LL n,m,k,s,a[N],sum[N];</span><br><span class="line"><span class="keyword">bool</span> vis[N];</span><br><span class="line"><span class="built_in">vector</span>&lt;LL&gt; v[N];</span><br><span class="line"></span><br><span class="line"><span class="function">LL <span class="title">solve</span><span class="params">(<span class="keyword">int</span> d,<span class="keyword">int</span> n,LL m)</span> </span>&#123;</span><br><span class="line">    LL ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(sum, <span class="number">0</span>, <span class="keyword">sizeof</span> sum);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">        sum[i] = sum[i - <span class="number">1</span>] + v[d][i - <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = n + <span class="number">1</span>; i &lt;= <span class="number">2</span> * n; ++i)</span><br><span class="line">        sum[i] = sum[i - <span class="number">1</span>] + v[d][i - n - <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span> * n + <span class="number">1</span>; i &lt;= <span class="number">3</span> * n; ++i)</span><br><span class="line">        sum[i] = sum[i - <span class="number">1</span>] + v[d][i - <span class="number">2</span> * n - <span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">deque</span>&lt;<span class="keyword">int</span>&gt; dq;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">3</span> * n; ++i) &#123;</span><br><span class="line">        <span class="keyword">while</span> (!dq.empty() &amp;&amp; sum[dq.back()] &gt; sum[i - <span class="number">1</span>])</span><br><span class="line">            dq.pop_back();</span><br><span class="line">        <span class="keyword">while</span> (!dq.empty() &amp;&amp; dq.front() + m &lt; i) <span class="comment">//控制子段和长度为m</span></span><br><span class="line">            dq.pop_front();</span><br><span class="line">        dq.emplace_back(i - <span class="number">1</span>);</span><br><span class="line">        ans = max(ans, sum[i] - sum[dq.front()]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> t = <span class="number">0</span>; t &lt; T; ++t) &#123;</span><br><span class="line">        <span class="built_in">memset</span>(vis, <span class="number">0</span>, <span class="keyword">sizeof</span> vis);</span><br><span class="line">        LL ans = -inf;</span><br><span class="line">        <span class="keyword">int</span> tot = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i)</span><br><span class="line">            v[i].clear();</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%lld%lld%lld%lld"</span>, &amp;n, &amp;s, &amp;m, &amp;k);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;a[i]);</span><br><span class="line">        <span class="comment">//处理循环节</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!vis[i]) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i; !vis[j]; j = (j + k) % n) &#123;</span><br><span class="line">                    vis[j] = <span class="number">1</span>;</span><br><span class="line">                    v[tot].push_back(a[j]);</span><br><span class="line">                &#125;</span><br><span class="line">                tot++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tot; ++i) &#123;</span><br><span class="line">            LL res = <span class="number">0</span>, tmp = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">int</span> len = v[i].size();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; len; ++j)</span><br><span class="line">                tmp += v[i][j];</span><br><span class="line">            res = solve(i, len, m);</span><br><span class="line">            ans = max(ans, res);</span><br><span class="line">            <span class="comment">//总收益小于0的话就跑一段长度不超过m的最大子段和就可以了</span></span><br><span class="line">            <span class="keyword">if</span> (tmp &lt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            LL ret = m % len;</span><br><span class="line">            LL cnt = m / len;</span><br><span class="line">            tmp = max(cnt - <span class="number">1</span>, <span class="number">0L</span>L) * tmp; <span class="comment">// cnt-1圈</span></span><br><span class="line">            <span class="keyword">if</span> (cnt &gt;= <span class="number">1</span>) ret += len;</span><br><span class="line">            res = max(res, solve(i, len, ret) + tmp); <span class="comment">//剩下的特判(单独算)</span></span><br><span class="line">            ans = max(ans, res);</span><br><span class="line">        &#125;</span><br><span class="line">        ans = max(s - ans, <span class="number">0L</span>L);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Case #%d: %lld\n"</span>, t + <span class="number">1</span>, ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -475,9 +480,7 @@
           
             <a href="/tags/HDU/" rel="tag"><i class="fa fa-tag"></i> HDU</a>
           
-            <a href="/tags/Greedy/" rel="tag"><i class="fa fa-tag"></i> 贪心</a>
-          
-            <a href="/tags/优先队列/" rel="tag"><i class="fa fa-tag"></i> 优先队列</a>
+            <a href="/tags/单调队列/" rel="tag"><i class="fa fa-tag"></i> 单调队列</a>
           
         </div>
       
@@ -490,8 +493,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/26/2018ccpc-hdu6441/" rel="next" title="2018CCPC网络预选赛1004(hdu6441) 费马大定理">
-                <i class="fa fa-chevron-left"></i> 2018CCPC网络预选赛1004(hdu6441) 费马大定理
+              <a href="/2018/08/28/bzoj2257/" rel="next" title="bzoj 2257 瓶子和燃料(裴蜀定理)">
+                <i class="fa fa-chevron-left"></i> bzoj 2257 瓶子和燃料(裴蜀定理)
               </a>
             
           </div>
@@ -499,10 +502,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/28/bzoj2299/" rel="prev" title="bzoj2299 向量(裴蜀定理)">
-                bzoj2299 向量(裴蜀定理) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -669,7 +668,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Buy-and-Resell"><span class="nav-number">1.</span> <span class="nav-text">Buy and Resell</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">2.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Neko’s-loop"><span class="nav-number">1.</span> <span class="nav-text">Neko’s loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">2.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
@@ -894,7 +893,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new Gitmint({
-            id: '2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列', 
+            id: '2018CCPC网络预选赛1007(hdu6444) 单调队列', 
             owner: 'sqwlly',
             repo: 'sqwlly.github.io',
             

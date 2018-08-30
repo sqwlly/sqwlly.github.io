@@ -4,6 +4,36 @@
 
     
   <url>
+    <loc>http://sqwlly.cn/2018/08/29/hdu6444/</loc>
+    <lastmod>2018-08-30T06:36:15.834Z</lastmod>
+    <data>
+        <display>
+        <title>2018CCPC网络预选赛1007(hdu6444) 单调队列</title>
+        <pubTime>2018-08-29T13:57:03.000Z</pubTime>
+        
+        <tag>CCPC</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>单调队列</tag>
+         
+         
+           
+             
+              <breadCrumb title="HDU" url="http://sqwlly.cn/categories/HDU/"/>
+          
+             
+              <breadCrumb title="CCPC" url="http://sqwlly.cn/categories/CCPC/"/>
+          
+             
+              <breadCrumb title="单调队列" url="http://sqwlly.cn/categories/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqwlly.cn/2018/08/28/bzoj2257/</loc>
     <lastmod>2018-08-28T07:06:37.616Z</lastmod>
     <data>
@@ -63,13 +93,13 @@
         <title>2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列</title>
         <pubTime>2018-08-26T11:25:03.000Z</pubTime>
         
-        <tag>贪心</tag>
-         
-        <tag>优先队列</tag>
+        <tag>CCPC</tag>
          
         <tag>HDU</tag>
          
-        <tag>CCPC</tag>
+        <tag>贪心</tag>
+         
+        <tag>优先队列</tag>
          
          
            
@@ -116,11 +146,11 @@
         
         <tag>数论</tag>
          
-        <tag>HDU</tag>
+        <tag>费马大定理</tag>
          
         <tag>CCPC</tag>
          
-        <tag>费马大定理</tag>
+        <tag>HDU</tag>
          
          
            
