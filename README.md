@@ -1,3 +1,4 @@
-[![个人博客 at https://gitter.im/iissnan/hexo-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![个人博客 at https://gitter.im/iissnan/hexo-theme-next](https://travis-ci.org/sqwlly/sqwlly.github.io.svg?branch=master)](https://travis-ci.org/sqwlly/sqwlly.github.io)
 
 正在逐步完善功能与美化ing...
