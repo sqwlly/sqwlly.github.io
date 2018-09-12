@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://sqwlly.cn/2018/09/12/ICPC-Net-xuzhou-H/</loc>
+    <lastmod>2018-09-12T05:45:23.751Z</lastmod>
+    <data>
+        <display>
+        <title>ACM-ICPC 2018 徐州赛区网络预赛 H Ryuji doesn't want to study(线段树 两种做法)</title>
+        <pubTime>2018-09-12T05:23:10.000Z</pubTime>
+        
+        <tag>ICPC</tag>
+         
+        <tag>线段树</tag>
+         
+         
+           
+             
+              <breadCrumb title="ICPC" url="http://sqwlly.cn/categories/ICPC/"/>
+          
+             
+              <breadCrumb title="线段树" url="http://sqwlly.cn/categories/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sqwlly.cn/2018/08/29/hdu6444/</loc>
     <lastmod>2018-08-30T06:36:15.834Z</lastmod>
     <data>
@@ -11,9 +36,9 @@
         <title>2018CCPC网络预选赛1007(hdu6444) 单调队列</title>
         <pubTime>2018-08-29T13:57:03.000Z</pubTime>
         
-        <tag>CCPC</tag>
-         
         <tag>HDU</tag>
+         
+        <tag>CCPC</tag>
          
         <tag>单调队列</tag>
          
@@ -93,13 +118,13 @@
         <title>2018CCPC网络预选赛1001(hdu6348) 贪心+优先队列</title>
         <pubTime>2018-08-26T11:25:03.000Z</pubTime>
         
-        <tag>CCPC</tag>
-         
-        <tag>HDU</tag>
-         
         <tag>贪心</tag>
          
         <tag>优先队列</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>CCPC</tag>
          
          
            
@@ -144,13 +169,13 @@
         <title>2018CCPC网络预选赛1004(hdu6441) 费马大定理</title>
         <pubTime>2018-08-26T07:12:50.000Z</pubTime>
         
-        <tag>数论</tag>
-         
-        <tag>费马大定理</tag>
+        <tag>HDU</tag>
          
         <tag>CCPC</tag>
          
-        <tag>HDU</tag>
+        <tag>数论</tag>
+         
+        <tag>费马大定理</tag>
          
          
            
