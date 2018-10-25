@@ -94,7 +94,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/sqwlly/sqwlly.github.io.git
+  repo: ubuntu@111.231.145.72:/var/repo/hexo_static
+    #repo: http://sqwlly.cn:/var/repo/hexo_static
   branch: master
 
 #mathJX
