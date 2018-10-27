@@ -215,7 +215,8 @@
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
                  <span class="leancloud-visitors-count"></span>
-             </span>
+            <span>>°C</span>
+				 </span>
           {% endif %}
 
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
