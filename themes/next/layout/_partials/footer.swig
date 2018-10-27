@@ -1,3 +1,4 @@
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!-- 新增访客统计代码 -->
 
@@ -45,27 +46,27 @@
 </div>
 
 {% if theme.footer.powered %}
-<div class="powered-by">{#
+<!-- <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://blog.csdn.net/Eternally831143">CSDN</a>') }}{#
-#}</div>
+#}</div> -->
 {% endif %}
 
 {% if theme.footer.powered and theme.footer.theme.enable %}
-  <span class="post-meta-divider">|</span>
+<!--  <span class="post-meta-divider">|</span> -->
 {% endif %}
 
 {% if theme.footer.theme.enable %}
-  <div class="theme-info">{#
+ <!-- <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#
   #}<a class="theme-link" target="_blank" href="https://github.com/sqwlly">{#
     #}sqwlly{#{{ theme.scheme }}#}{#
   #}</a>{#{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
-#}</div>
+#}</div> -->
 {% endif %}
 
 {% if theme.footer.custom_text %}
-  <div class="footer-custom">{#
+<!--  <div class="footer-custom">{#
   #}{{ theme.footer.custom_text }}{#
 #}</div>
-
+-->
 {% endif %}
