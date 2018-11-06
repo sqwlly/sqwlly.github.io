@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sqwlly.cn/"/>
-  <updated>2018-10-27T06:06:31.931Z</updated>
+  <updated>2018-11-06T16:52:28.314Z</updated>
   <id>http://sqwlly.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CodeForces - 476C-Dreamoon and Sums(数学思维)</title>
+    <link href="http://sqwlly.cn/2018/11/07/codeforces-476-c/"/>
+    <id>http://sqwlly.cn/2018/11/07/codeforces-476-c/</id>
+    <published>2018-11-06T16:49:26.000Z</published>
+    <updated>2018-11-06T16:52:28.314Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="C-Dreamoon-and-Sums"><a href="#C-Dreamoon-and-Sums" class="headerlink" title="C. Dreamoon and Sums"></a><a href="http://codeforces.com/problemset/problem/476/C" target="_blank" rel="noopener">C. Dreamoon and Sums</a></h1><p>题解：设$$x = q\cdot b + r \tag{1}$$则有</p><p>$$div(x,b) = q ,\: mod(x,b) = r\in[1,b-1]\tag{2}$$<br>$$\frac{(1)}{r} =&gt;  \frac{x}{r} = \frac{q\cdot b}{r} + 1 \tag{3}$$<br><a id="more"></a><br>题目所求$$\frac{div(x,b)}{mod(x,b)}=&gt;\frac{q}{r}=k\in[1,a]\tag{4}$$<br>可得$$x = (3) \cdot r = (k\cdot b+1) \cdot r\tag{5}$$<br>所以$$\sum{x} = \sum{(k\cdot b+ 1)} \cdot\sum{r}\tag{6}$$<br>$$\sum{x} = \frac{b\cdot (b - 1)}{2}\left[ (b+1)\cdot a + \frac{a\cdot (a - 1)}{2}\cdot b \right]\tag{7}$$</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> mod = <span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">    freopen(<span class="string">"input.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">LL a,b;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">LL t = ((b + <span class="number">1</span>) * a ) % mod;</span><br><span class="line">LL tmp = (a * (a - <span class="number">1</span>) / <span class="number">2</span>) % mod;</span><br><span class="line">tmp = tmp * b % mod;</span><br><span class="line">tmp = (tmp + t) % mod;</span><br><span class="line">t = (b - <span class="number">1</span>) * b / <span class="number">2</span> % mod;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;(t * tmp) % mod&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;C-Dreamoon-and-Sums&quot;&gt;&lt;a href=&quot;#C-Dreamoon-and-Sums&quot; class=&quot;headerlink&quot; title=&quot;C. Dreamoon and Sums&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://codeforces.com/problemset/problem/476/C&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C. Dreamoon and Sums&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;题解：设$$x = q\cdot b + r \tag{1}$$则有&lt;/p&gt;
+&lt;p&gt;$$div(x,b) = q ,\: mod(x,b) = r\in[1,b-1]\tag{2}$$&lt;br&gt;$$\frac{(1)}{r} =&amp;gt;  \frac{x}{r} = \frac{q\cdot b}{r} + 1 \tag{3}$$&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数论" scheme="http://sqwlly.cn/categories/MathTheory/"/>
+    
+      <category term="CodeForces" scheme="http://sqwlly.cn/categories/CodeForces/"/>
+    
+    
+      <category term="数论" scheme="http://sqwlly.cn/tags/MathTheory/"/>
+    
+      <category term="CodeForces" scheme="http://sqwlly.cn/tags/CodeForces/"/>
+    
+  </entry>
   
   <entry>
     <title>Educational Codeforces Round 53 (Rated for Div. 2) C(二分)</title>
