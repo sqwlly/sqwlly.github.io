@@ -2,9 +2,9 @@
 title: CodeForces - 476C-Dreamoon and Sums(数学思维)
 comments: true
 date: 2018-11-07 00:49:26
-tags: [CodeForces,数论]
+tags: [Codeforces,数论]
 categories: 
-- [CodeForces]
+- [Codeforces]
 - [数论]
 ---
 # [C. Dreamoon and Sums](http://codeforces.com/problemset/problem/476/C)

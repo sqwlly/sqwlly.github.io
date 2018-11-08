@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="牛客,fwt,acm," />
+  <meta name="keywords" content="贪心,二分," />
 
 
 
@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="题目描述Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.Given n and $a[i]$, where $n$ is a power of $2$, let’s consider an $n\times n$ matrix $A$. The inde">
-<meta name="keywords" content="牛客,fwt,acm">
+<meta name="description" content="Plants vs. Zombies题解：首先肯定可以想到走过去再回来是肯定浪费步数的，最多的只能是相邻的两个植物来回，大致就呈一个$Z$字形走过，最后要注意最后一步停在哪里。其次最大化最小值，二分即可。(深深吐槽$\%$，$2000ms$刚好卡过$2333333$，然后再交就$tle$，最后改成$ceil$才稳的) 代码12345678910111213141516171819202122232">
+<meta name="keywords" content="贪心,二分">
 <meta property="og:type" content="article">
-<meta property="og:title" content="牛客多校第九场A(fwt-异或卷积)">
-<meta property="og:url" content="http://sqwlly.cn/2018/08/24/nowcoderTrain9-A/index.html">
+<meta property="og:title" content="ZOJ 4062 Plants vs. Zombies(二分+贪心) 2018ACM-ICPC青岛现场赛E">
+<meta property="og:url" content="http://sqwlly.cn/2018/11/08/2018icpc-qingdao-onsite-E/index.html">
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
-<meta property="og:description" content="题目描述Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.Given n and $a[i]$, where $n$ is a power of $2$, let’s consider an $n\times n$ matrix $A$. The inde">
+<meta property="og:description" content="Plants vs. Zombies题解：首先肯定可以想到走过去再回来是肯定浪费步数的，最多的只能是相邻的两个植物来回，大致就呈一个$Z$字形走过，最后要注意最后一步停在哪里。其次最大化最小值，二分即可。(深深吐槽$\%$，$2000ms$刚好卡过$2333333$，然后再交就$tle$，最后改成$ceil$才稳的) 代码12345678910111213141516171819202122232">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-27T06:06:31.951Z">
+<meta property="og:updated_time" content="2018-11-08T15:01:58.939Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="牛客多校第九场A(fwt-异或卷积)">
-<meta name="twitter:description" content="题目描述Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.Given n and $a[i]$, where $n$ is a power of $2$, let’s consider an $n\times n$ matrix $A$. The inde">
+<meta name="twitter:title" content="ZOJ 4062 Plants vs. Zombies(二分+贪心) 2018ACM-ICPC青岛现场赛E">
+<meta name="twitter:description" content="Plants vs. Zombies题解：首先肯定可以想到走过去再回来是肯定浪费步数的，最多的只能是相邻的两个植物来回，大致就呈一个$Z$字形走过，最后要注意最后一步停在哪里。其次最大化最小值，二分即可。(深深吐槽$\%$，$2000ms$刚好卡过$2333333$，然后再交就$tle$，最后改成$ceil$才稳的) 代码12345678910111213141516171819202122232">
 
 
 
@@ -139,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://sqwlly.cn/2018/08/24/nowcoderTrain9-A/"/>
+  <link rel="canonical" href="http://sqwlly.cn/2018/11/08/2018icpc-qingdao-onsite-E/"/>
 
 
 
 
 
-  <title>牛客多校第九场A(fwt-异或卷积) | Sqwlly's Blog</title>
+  <title>ZOJ 4062 Plants vs. Zombies(二分+贪心) 2018ACM-ICPC青岛现场赛E | Sqwlly's Blog</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/08/24/nowcoderTrain9-A/">
+    <link itemprop="mainEntityOfPage" href="http://sqwlly.cn/2018/11/08/2018icpc-qingdao-onsite-E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sqwlly">
@@ -309,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">牛客多校第九场A(fwt-异或卷积)</h1>
+          <h1 class="post-title" itemprop="name headline">ZOJ 4062 Plants vs. Zombies(二分+贪心) 2018ACM-ICPC青岛现场赛E</h1>
         
 
         <div class="post-meta">
@@ -322,8 +322,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-24T23:46:37+08:00">
-                2018-08-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-08T23:00:41+08:00">
+                2018-11-08
               </time>
             
 
@@ -345,8 +345,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MathTheory/" itemprop="url" rel="index">
-                    <span itemprop="name">数论</span>
+                  <a href="/categories/Greedy/" itemprop="url" rel="index">
+                    <span itemprop="name">贪心</span>
                   </a>
                 </span>
 
@@ -356,8 +356,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MathTheory/Fwt/" itemprop="url" rel="index">
-                    <span itemprop="name">位运算卷积</span>
+                  <a href="/categories/二分/" itemprop="url" rel="index">
+                    <span itemprop="name">二分</span>
                   </a>
                 </span>
 
@@ -374,8 +374,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/24/nowcoderTrain9-A/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/24/nowcoderTrain9-A/" itemprop="commentsCount"></span>
+                <a href="/2018/11/08/2018icpc-qingdao-onsite-E/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/11/08/2018icpc-qingdao-onsite-E/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -383,7 +383,7 @@
 
           
           
-             <span id="/2018/08/24/nowcoderTrain9-A/" class="leancloud_visitors" data-flag-title="牛客多校第九场A(fwt-异或卷积)">
+             <span id="/2018/11/08/2018icpc-qingdao-onsite-E/" class="leancloud_visitors" data-flag-title="ZOJ 4062 Plants vs. Zombies(二分+贪心) 2018ACM-ICPC青岛现场赛E">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -409,7 +409,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  871
+                  369
                 </span>
               
 
@@ -425,7 +425,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  2
                 </span>
               
             </div>
@@ -446,16 +446,8 @@
       
 
       
-        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Niuniu has recently learned how to use Gaussian elimination to solve systems of linear equations.<br>Given n and $a[i]$, where $n$ is a power of $2$, let’s consider an $n\times n$ matrix $A$.</p>
-<p>The index of $A[i][j]$ and $a[i]$ are numbered from $0$.<br>The element $A[i][j]$ satisfies $A[i][j] = a[i\, xor\, j]$,<br><a href="https://en.wikipedia.org/wiki/Bitwise_operation" target="_blank" rel="noopener">XOR</a><br><a id="more"></a><br>Let $p = 1000000007$.<br>Consider the equation<br>$A x = b \pmod p$<br>where $A$ is an $n \times n$ matrix, and $x$ and $b$ are both $n \times 1$ row vector.</p>
-<p>Given $n, a[i], b[i]$, you need to solve the $x$.<br>For example, when $n = 4$, the equations look like<br>$A[0][0]\cdot  x[0] + A[0][1]\cdot  x[1] + A[0][2]\cdot x[2] + A[0][3]\cdot x[3] = b[0] \pmod p\\\ <br>A[1][0]\cdot x[0] + A[1][1]\cdot x[1] + A[1][2]\cdot x[2] + A[1][3]\cdot x[3] = b[1] \pmod p\\\\<br>A[2][0]\cdot x[0] + A[2][1]\cdot x[1] + A[2][2]\cdot x[2] + A[2][3]\cdot x[3] = b[2] \pmod p\\\\<br>A[3][0]\cdot x[0] + A[3][1]\cdot x[1] + A[3][2]\cdot x[2] + A[3][3]\cdot x[3] = b[3] \pmod p$<br>and the matrix $A$ can be decided by the array $a$.</p>
-<p>It is guaranteed that there is a unique solution $x$ for these equations.</p>
-<h1 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h1><p>The first line contains an integer, which is $n$.<br>The second line contains $n$ integers, which are the array $a$.<br>The third line contains $n$ integers, which are the array $b$.</p>
-<p>$1 &lt;= n &lt;= 262144$<br>$p = 1000000007$<br>$0 &lt;= a[i] &lt; p$<br>$0 &lt;= b[i] &lt; p$</p>
-<h1 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h1><p>The output should contains $n$ lines.<br>The $i$-th(index from $0$) line should contain $x[i]$.<br>$x[i]$ is an integer, and should satisfy $0 &lt;= x[i] &lt; p$.</p>
-<h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>首先，我们通过观察题目得到$$A\times x = b \pmod p$$<br>将矩阵$A$展开<br>$$ \left[<br>\begin{array}{ccc}<br>  a_0&amp;a_1&amp;a_2&amp;a_3\\\\<br>  a_1&amp;a_0&amp;a_3&amp;a_2\\\\<br>  a_2&amp;a_3&amp;a_0&amp;a_1\\\\<br>  a_3&amp;a_2&amp;a_1&amp;a_0<br>\end{array}<br>\right] $$<br>我们可以发现这个矩阵左上角和右下角相同，左下角和右上角相同，矩阵再扩大亦是如此。<br>并且可以看出矩阵的全部信息只和第一行有关，恰好第一行就是数组$a$，所以实际上这是一个$fwt$(异或卷积)。<br>所以我们可以将问题转换成：给出向量$a$和$b$，$fwt(a)\cdot fwt(x) = fwt(b)$，求原向量$x$。</p>
-<p>那么我们就可以做一次$fwt(a)$，做一次$fwt(b)$，然后$x[i] = \frac{b[i]}{a[i]}$，再做一次逆$fwt(x)$就好了啊。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">262150</span>, p = <span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">LL a[N], b[N], x[N], n, inv2;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fwt</span><span class="params">(LL *a)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; <span class="number">1</span> &lt;&lt; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j += <span class="number">1</span> &lt;&lt; i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">1</span> &lt;&lt; (i - <span class="number">1</span>); k++) &#123;</span><br><span class="line">                LL x = a[j + k];</span><br><span class="line">                LL y = a[j + k + (<span class="number">1</span> &lt;&lt; (i - <span class="number">1</span>))];</span><br><span class="line">                a[j + k] = (x + y) % p;</span><br><span class="line">                a[j + k + (<span class="number">1</span> &lt;&lt; (i - <span class="number">1</span>))] = (x + p - y) % p;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fwt</span><span class="params">(LL *a,<span class="keyword">int</span> t)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i &lt;&lt;= <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j += (i &lt;&lt; <span class="number">1</span>))</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = j; k &lt; i + j; k++) &#123;</span><br><span class="line">                LL x = a[k], y = a[k + i];</span><br><span class="line">                a[k] = (x + y) % p, a[k + i] = (x - y + p) % p;</span><br><span class="line">                <span class="keyword">if</span> (t)a[k] = a[k] * inv2 % p, a[k + i] = a[k + i] * inv2 % p;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">LL <span class="title">Pow</span><span class="params">(LL a,LL n)</span> </span>&#123;</span><br><span class="line">    LL ans = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (n) &#123;</span><br><span class="line">        <span class="keyword">if</span> (n &amp; <span class="number">1</span>) ans = a * ans % p;</span><br><span class="line">        a = a * a % p;</span><br><span class="line">        n &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans % p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;n);</span><br><span class="line">    inv2 = Pow(<span class="number">2</span>, p - <span class="number">2</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, a + i);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%lld"</span>, b + i);</span><br><span class="line">    fwt(a);</span><br><span class="line">    fwt(b);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        x[i] = b[i] * Pow(a[i], p - <span class="number">2</span>) % p;</span><br><span class="line">    &#125;</span><br><span class="line">    fwt(x, <span class="number">1</span>);<span class="comment">//逆fwt</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, x[i]);</span><br><span class="line"><span class="comment">//    实际上我们如果要算逆fwt也可以这样求</span></span><br><span class="line"><span class="comment">//    for (int i = 0; i &lt; n; ++i)</span></span><br><span class="line"><span class="comment">//        printf("%lld\n", x[i] * Pow(n, p - 2) % p);</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="Plants-vs-Zombies"><a href="#Plants-vs-Zombies" class="headerlink" title="Plants vs. Zombies"></a><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=5819" target="_blank" rel="noopener">Plants vs. Zombies</a></h1><p>题解：首先肯定可以想到走过去再回来是肯定浪费步数的，最多的只能是相邻的两个植物来回，大致就呈一个$Z$字形走过，最后要注意最后一步停在哪里。其次最大化最小值，二分即可。(深深吐槽$\%$，$2000ms$刚好卡过$2333333$，然后再交就$tle$，最后改成$ceil$才稳的)</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">100100</span>;</span><br><span class="line"><span class="keyword">int</span> a[N], n;</span><br><span class="line">LL plant[N], m;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">love</span><span class="params">(LL minH)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(plant, <span class="number">0</span>, <span class="keyword">sizeof</span> plant);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">		<span class="keyword">if</span>(m &gt; <span class="number">0</span>) &#123;</span><br><span class="line">			plant[i] += a[i];</span><br><span class="line">			m--;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(m &lt;= <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">if</span>(plant[i] &gt;= minH) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(minH &gt; plant[i]) &#123;</span><br><span class="line">			LL cnt = <span class="number">1L</span>L * <span class="built_in">ceil</span>((minH - plant[i]) * <span class="number">1.0</span> / a[i]);</span><br><span class="line">			<span class="keyword">if</span>(cnt * <span class="number">2</span> &lt;= m) &#123;</span><br><span class="line">				m -= cnt * <span class="number">2</span>;</span><br><span class="line">				plant[i] += a[i] * cnt;</span><br><span class="line">				plant[i + <span class="number">1</span>] += a[i + <span class="number">1</span>] * cnt;</span><br><span class="line">			&#125;<span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">if</span>(m &lt;= <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">		<span class="keyword">if</span>(plant[i] &lt; minH) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> ONLINE_JUDGE</span></span><br><span class="line">    freopen(<span class="string">"input.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	<span class="keyword">int</span> T;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;T);</span><br><span class="line">	<span class="keyword">while</span>(T--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d %lld"</span>,&amp;n,&amp;m);</span><br><span class="line">		<span class="built_in">memset</span>(a, <span class="number">0</span>, <span class="keyword">sizeof</span> a);</span><br><span class="line">		LL l = <span class="number">1</span>, r = <span class="number">0</span>, ans = <span class="number">0</span>, t = m;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d"</span>, a + i);</span><br><span class="line">			r = max(r, a[i] * m);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(m == <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="built_in">puts</span>(<span class="string">"0"</span>);</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span>(l &lt;= r) &#123;</span><br><span class="line">			LL mid = l + (r - l) / <span class="number">2</span>;</span><br><span class="line">			m = t;</span><br><span class="line">			<span class="keyword">if</span>(love(mid)) &#123;</span><br><span class="line">				ans = mid;</span><br><span class="line">				l = mid + <span class="number">1</span>;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				r = mid - <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -473,11 +465,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Nowcoder/" rel="tag"><i class="fa fa-tag"></i> 牛客</a>
+            <a href="/tags/Greedy/" rel="tag"><i class="fa fa-tag"></i> 贪心</a>
           
-            <a href="/tags/fwt/" rel="tag"><i class="fa fa-tag"></i> fwt</a>
-          
-            <a href="/tags/acm/" rel="tag"><i class="fa fa-tag"></i> acm</a>
+            <a href="/tags/二分/" rel="tag"><i class="fa fa-tag"></i> 二分</a>
           
         </div>
       
@@ -490,8 +480,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/23/newBlog/" rel="next" title="新的个人博客开张啦～">
-                <i class="fa fa-chevron-left"></i> 新的个人博客开张啦～
+              <a href="/2018/11/07/codeforces-476-c/" rel="next" title="CodeForces - 476C-Dreamoon and Sums(数学思维)">
+                <i class="fa fa-chevron-left"></i> CodeForces - 476C-Dreamoon and Sums(数学思维)
               </a>
             
           </div>
@@ -499,10 +489,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/25/2018ccpc-hdu6447/" rel="prev" title="2018CCPC网络预选赛1010(hdu6447) dp+树状数组">
-                2018CCPC网络预选赛1010(hdu6447) dp+树状数组 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -676,7 +662,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Input"><span class="nav-number">2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Output"><span class="nav-number">3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">4.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">5.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Plants-vs-Zombies"><span class="nav-number">1.</span> <span class="nav-text">Plants vs. Zombies</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
@@ -902,7 +888,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new Gitmint({
-            id: '牛客多校第九场A(fwt-异或卷积)', 
+            id: 'ZOJ 4062 Plants vs. Zombies(二分+贪心) 2018ACM-ICPC青岛现场赛E', 
             owner: 'sqwlly',
             repo: 'sqwlly.github.io',
             
