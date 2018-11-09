@@ -9,6 +9,7 @@ categories:
 ---
 # [Plants vs. Zombies](http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=5819)
 题解：首先肯定可以想到走过去再回来是肯定浪费步数的，最多的只能是相邻的两个植物来回，大致就呈一个$Z$字形走过，最后要注意最后一步停在哪里。其次最大化最小值，二分即可。(深深吐槽$\%$，$2000ms$刚好卡过$2333333$，然后再交就$tle$，最后改成$ceil$才稳的)
+<!--more-->
 # 代码
 
 ```c
