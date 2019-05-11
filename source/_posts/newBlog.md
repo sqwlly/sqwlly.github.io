@@ -1,5 +1,5 @@
 ---
-title: 新的个人博客开张啦～
+title: 那一天
 date: 2018-08-23 14:33:33
 tags: 杂集
 categories: 杂集

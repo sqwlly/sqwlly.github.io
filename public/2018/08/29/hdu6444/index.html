@@ -6,12 +6,12 @@
 
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="baidu-site-verification" content="jZOkjPUN3h" />
-<meta name="google-site-verification" content="lE3NeEPRl0mXg0Sn47xf5cP_uqHw0fxrelmuppZKOp8" />
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="jZOkjPUN3h">
+<meta name="google-site-verification" content="lE3NeEPRl0mXg0Sn47xf5cP_uqHw0fxrelmuppZKOp8">
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 <style>
@@ -37,8 +37,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -57,7 +57,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -65,9 +65,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -85,13 +85,13 @@
 
 
 
-  <meta name="keywords" content="HDU,CCPC,单调队列," />
+  <meta name="keywords" content="HDU,CCPC,单调队列,">
 
 
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Sqwlly's Blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Sqwlly's Blog" type="application/atom+xml">
 
 
 
@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Sqwlly&#39;s Blog">
 <meta property="og:description" content="Neko’s loop问题分析题意：给一个元素个数为$n$的环，选定任意一个起点$i$后，每次可以往前跳$(i+k)\%n$，然后会相应得到$a_i$的收益，问跳$m$次后总收益可以达到$s$(可以提前停止)，在开始之前至少需要身上需要有多少收益。 显然这样选定一个起点后不断往前跳，所获得的$a_i$会形成一个环。 那么我们就可以把所有环找出来，通过枚举环的起点来找每个环可以获得的最大收益。问题就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-27T06:06:31.943Z">
+<meta property="og:updated_time" content="2019-05-11T14:54:01.997Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018CCPC网络预选赛1007(hdu6444) 单调队列">
 <meta name="twitter:description" content="Neko’s loop问题分析题意：给一个元素个数为$n$的环，选定任意一个起点$i$后，每次可以往前跳$(i+k)\%n$，然后会相应得到$a_i$的收益，问跳$m$次后总收益可以达到$s$(可以提前停止)，在开始之前至少需要身上需要有多少收益。 显然这样选定一个起点后不断往前跳，所获得的$a_i$会形成一个环。 那么我们就可以把所有环找出来，通过枚举环的起点来找每个环可以获得的最大收益。问题就">
@@ -139,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="http://sqwlly.cn/2018/08/29/hdu6444/"/>
+  <link rel="canonical" href="http://sqwlly.cn/2018/08/29/hdu6444/">
 
 
 
@@ -173,7 +173,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Sqwlly's Blog</span>
         <span class="logo-line-after"><i></i></span>
@@ -203,7 +203,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -213,7 +213,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -223,7 +223,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -233,7 +233,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -243,7 +243,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -253,7 +253,7 @@
         <li class="menu-item menu-item-board">
           <a href="/board/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
             
             留言
           </a>
@@ -296,7 +296,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sqwlly">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/sqwlly.jpg">
     </span>
 
@@ -333,7 +333,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -577,9 +577,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/sqwlly.jpg"
-                alt="Sqwlly" />
+              <img class="site-author-image" itemprop="image" src="/images/sqwlly.jpg" alt="Sqwlly">
             
               <p class="site-author-name" itemprop="name">Sqwlly</p>
               <p class="site-description motion-element" itemprop="description">日拱一卒无有尽，功不唐捐终入海</p>
@@ -592,7 +590,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -707,7 +705,7 @@
 <!-- 新增访客统计代码 -->
 
 <div class="busuanzi-count">
-    <script async="" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="site-uv">
       <i class="fa fa-user"></i>
        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 
@@ -720,12 +718,12 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">9.1k</span> 字
+      博客全站共： <span class="post-count">9.2k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
 
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-share-alt"></i>
 
@@ -1105,7 +1103,7 @@
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
    <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
